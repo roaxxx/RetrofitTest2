@@ -5,6 +5,5 @@ import com.siscem.myapplication.model.People
 
 
 data class Person(
-    @SerializedName("People")
-    val People: List<People>
+    val persons: List<People>
 )

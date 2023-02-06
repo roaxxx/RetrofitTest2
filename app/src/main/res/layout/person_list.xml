@@ -1,50 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         app:cardElevation="3dp"
         app:cardUseCompatPadding="true"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:cardBackgroundColor="@color/teal_200"
         app:cardCornerRadius="10dp">
 
-    <TableLayout
+    <androidx.cardview.widget.CardView
+
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="15dp"
-            android:gravity="center">
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/teal_200"
+            app:cardCornerRadius="10dp">
 
-        <TableRow android:layout_width="match_parent"
-                  android:layout_height="wrap_content" android:gravity="center">
-            <TextView
-                    android:text="Nombre"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/textView"
-                    android:fontFamily="sans-serif" android:textSize="24sp" android:gravity="start"
-                    android:paddingLeft="20dp" android:paddingRight="20dp" android:textStyle="bold"/>
-            <TextView
-                    android:text="Cargo"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/textView2"
-                    android:fontFamily="sans-serif" android:textSize="24sp" android:paddingLeft="20dp"
-                    android:paddingRight="20dp" android:textStyle="bold"/>
-        </TableRow>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
-            <TextView
-                    android:text="JUAN PUIN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/name"
-                    android:fontFamily="sans-serif" android:textSize="24sp" android:paddingLeft="20dp"
-                    android:paddingRight="20dp"/>
-            <TextView
-                    android:text="CLIENTE"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/rol"
-                    android:fontFamily="sans-serif" android:textSize="24sp" android:paddingLeft="20dp"
-                    android:paddingRight="20dp"/>
-        </TableRow>
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:gravity="center">
 
-    </TableLayout>
+            <TableRow android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:gravity="center">
+                <TextView
+                        android:text="Nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/textView"
+                        android:fontFamily="sans-serif" android:textSize="16sp" android:gravity="start"
+                        android:paddingLeft="20dp" android:paddingRight="20dp" android:textStyle="bold"/>
+                <TextView
+                        android:text="Cargo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/textView2"
+                        android:fontFamily="sans-serif" android:textSize="16sp" android:paddingLeft="20dp"
+                        android:paddingRight="20dp" android:textStyle="bold"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center">
+                <TextView
+                        android:text="JUAN PUIN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/name"
+                        android:fontFamily="sans-serif" android:textSize="16sp" android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+                <TextView
+                        android:text="CLIENTE"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/rol"
+                        android:fontFamily="sans-serif" android:textSize="16sp" android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+            </TableRow>
 
-</androidx.cardview.widget.CardView>
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
